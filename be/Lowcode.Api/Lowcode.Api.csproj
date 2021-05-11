@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Lowcode.Api</AssemblyName>
+    <RootNamespace>Lowcode.Api</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Working\Outsource\LowCode\BE\lowcode-be\Lowcode.Api\Lowcode.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutofacModules\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="AutofacModules\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="AutofacModules\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="AutofacModules\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Authorization\AuthenticatedUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.2" />
+    <PackageReference Include="EPPlus" Version="4.5.2.1" />
+    <PackageReference Include="Hashids.net" Version="1.2.2" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="2.6.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.Sentry.AspNetCore" Version="2.1.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lowcode.Domain\Lowcode.Domain.csproj" />
+    <ProjectReference Include="..\Lowcode.Framework\Lowcode.Framework.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1Staging_1json__JSONSchema="http://json.schemastore.org/appsscript" /></VisualStudio></ProjectExtensions>
+
+</Project>

@@ -1,0 +1,20 @@
+{
+    "languages": {
+        "language": [
+            "言語",
+            "Language"
+        ],
+        "japanese": [
+            "日本",
+            "Japanese"
+        ],
+        "english": [
+            "英語",
+            "English"
+        ],
+        "vietnamese": [
+        "ベトナム",
+        "Vietnamese"
+        ]
+    }
+}

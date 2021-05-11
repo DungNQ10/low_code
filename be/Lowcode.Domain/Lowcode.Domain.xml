@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lowcode.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Lowcode.Domain.Data.Entity.Roles">
+            <summary>
+            Vai trò của hệ thống
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Data.Entity.User.WhiteList">
+            <summary>
+            danh sach ip duoc access
+            </summary>
+        </member>
+        <member name="M:Lowcode.Domain.Services.RolesFacade.EnumHelper.GetAttributeOfType``1(System.Enum)">
+            <summary>
+            Gets an attribute on an enum field value
+            </summary>
+            <typeparam name="T">The type of the attribute you want to retrieve</typeparam>
+            <param name="enumVal">The enum value</param>,
+            <returns>The attribute of type T that exists on the enum value</returns>
+            <example>string desc = myEnumVariable.GetAttributeOfType<DescriptionAttribute>().Description;</DescriptionAttribute></example>
+        </member>
+        <member name="T:Lowcode.Domain.Services.RolesFacade.SystemRoles">
+            <summary>
+            Các vai trò hệ thống không được phép xóa
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.RolesFacade.SystemRoles.Administrators">
+            <summary>
+            Quản trị hệ thống
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.RolesFacade.SystemRoles.Accountants">
+            <summary>
+            Kế toán viên
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.RolesFacade.SystemRoles.ChiefAccountant">
+            <summary>
+            Kế toán trưởng
+            </summary>
+        </member>
+        <member name="T:Lowcode.Domain.Services.UserFacade.AccountType">
+            <summary>
+            Loại tài khoản
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.UserFacade.AccountType.Staff">
+            <summary>
+            Nhân viên
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.UserFacade.AccountType.Customer">
+            <summary>
+            Khách hàng
+            </summary>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.ResetPassword(System.Int32,System.String)">
+            <summary>
+            Reset mật khẩu theo user
+            </summary>
+            <param name="userId"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.Update(Lowcode.Domain.Services.UserFacade.UserModel,System.Boolean)">
+            <summary>
+            Cập nhật tài khoản co thay đổi time stamp
+            </summary>
+            <param name="staff"></param>
+            <param name="forceChangeTimestamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.ToggleLock(System.Int32)">
+            <summary>
+            Khóa hoặc mở khóa tài khoản
+            </summary>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.ChangePassword(System.Int32,System.String,System.String)">
+            <summary>
+            Đổi mật khẩu user
+            </summary>
+            <param name="userId"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.ChangePassword(Lowcode.Domain.Services.UserFacade.ChangePasswordModel)">
+            <summary>
+            Change current user password
+            </summary>
+            <param name="changePassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.VerifyPassword(System.String,System.String)">
+            <summary>
+            Xác thực thông tin user
+            </summary>
+            <param name="userName"></param>
+            <param name="encryptedPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.ListAll(System.Nullable{Lowcode.Domain.Services.UserFacade.UserStatus})">
+            <summary>
+            get all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.CheckModified(System.String,System.Int32)">
+            <summary>
+            check user has been modified?
+            </summary>
+            <param name="timeStemp"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.GetUserByPermission(Lowcode.Domain.Services.RolesFacade.PermissionCode)">
+            <summary>
+            get user by permission
+            </summary>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Services.UserFacade.IUserService.GetUserByPermission(System.Collections.Generic.List{Lowcode.Domain.Services.RolesFacade.PermissionCode})">
+            <summary>
+            get users by permissions
+            </summary>
+            <param name="permissions"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Lowcode.Domain.Services.UserFacade.UserModel">
+            <summary>
+            Tài khoản của hệ thống
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Id">
+            <summary>
+            Mã tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.FullName">
+            <summary>
+            Họ tên tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Password">
+            <summary>
+            Mật khẩu
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Email">
+            <summary>
+            Email đăng nhập
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Gender">
+            <summary>
+            Giới tính
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Mobile">
+            <summary>
+            Số di động
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Status">
+            <summary>
+            Trạng thái tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Avatar">
+            <summary>
+            Ảnh minh họa dạng base 64
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.CreatedDate">
+            <summary>
+            Ngày tạo
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.UpdatedDate">
+            <summary>
+            Ngày cập nhật
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.CreatedBy">
+            <summary>
+            Mã user tạo tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.UpdatedBy">
+            <summary>
+            Mã user cập nhật tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.UserRoles">
+            <summary>
+            Vai trò của user
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.ObjectId">
+            <summary>
+            Mã đối tượng sử dụng tài khoản (Staff, Distributor)
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.AccountType">
+            <summary>
+            Loại tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.UserModifiedTimeStamp">
+            <summary>
+            Token xác thực tính hợp lệ của tài khoản
+            </summary>
+        </member>
+        <member name="P:Lowcode.Domain.Services.UserFacade.UserModel.Permissions">
+            <summary>
+            Quyền của user đăng nhập
+            </summary>
+        </member>
+        <member name="T:Lowcode.Domain.Services.UserFacade.UserStatus">
+            <summary>
+            Trạng thái tài khoản
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.UserFacade.UserStatus.NotActived">
+            <summary>
+            Chưa kích hoạt
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.UserFacade.UserStatus.Actived">
+            <summary>
+            Kích hoạt
+            </summary>
+        </member>
+        <member name="F:Lowcode.Domain.Services.UserFacade.UserStatus.Disabled">
+            <summary>
+            Bị vô hiệu
+            </summary>
+        </member>
+        <member name="T:Lowcode.Domain.Shared.IdentityGenerator">
+            <summary>
+            Gen id from db
+            </summary>
+        </member>
+        <member name="M:Lowcode.Domain.Shared.IdentityGenerator.GenerateIdentity(System.String,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Auto generate from identity
+            </summary>
+            <param name="TableName"></param>
+            <param name="ColumnName"></param>
+            <param name="ColumnLength"></param>
+            <param name="Prefix"></param>
+            <param name="Padding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lowcode.Domain.Shared.MapLocationHelper.IsValidMap(System.String)">
+            <summary>
+            Validate map format data
+            </summary>
+            <param name="mapLocation"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Lowcode.Domain.Shared.MobileHelper">
+            <summary>
+            Tiện ích chuyển đổi sđt thành tiêu chuẩn
+            </summary>
+        </member>
+        <member name="M:Lowcode.Domain.Shared.MobileHelper.ToStandardMobile(System.String)">
+            <summary>
+            Chuyển số điện thoại thành số tiêu chuẩn có định dạng 84916010184
+            </summary>
+            <param name="mobile"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

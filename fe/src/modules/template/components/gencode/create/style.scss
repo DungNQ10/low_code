@@ -1,0 +1,14 @@
+.fixtable{
+    width: 100%;
+    th{
+        text-align: center;
+        font-weight: bold;
+    }
+    thead>th.index_column{
+        width: 50px;
+    }
+}
+
+.form-row{
+    padding: 10px 0;
+}

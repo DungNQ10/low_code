@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\AppContextFactory.cs" />
+    <Compile Remove="Utils\ImageUtil.cs" />
+    <Compile Remove="Utils\UploadFileHelper.cs" />
+    <Compile Remove="Utils\UrlHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Words" Version="19.5.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.10.1" />
+    <PackageReference Include="DotNetZip" Version="1.13.7" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="MailKit" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="StringTemplate4" Version="4.0.8" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logging\" />
+  </ItemGroup>
+
+</Project>

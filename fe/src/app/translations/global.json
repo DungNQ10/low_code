@@ -1,0 +1,65 @@
+{
+ 
+  "commonMessage": {
+    "C_MSG_1": [
+      "New item is created successfully.",
+      "New item is created successfully."
+    ],
+    "C_MSG_2": [
+      "Are you sure want to delete selected item?",
+      "Are you sure want to delete selected item?"
+    ],
+    "C_MSG_3": [
+      "선택된 항목이 삭제되었습니다.",
+      "Selected item is deleted successfully."
+    ],
+    "C_MSG_4": [
+      "Selected item is deleted successfully.",
+      "Your Search Returns No Results!"
+    ],
+    "C_MSG_5": [
+      "An error has occurred. Please try again in a few minutes. If the problem continues, contact administrator.",
+      "An error has occurred. Please try again in a few minutes. If the problem continues, contact administrator."
+    ],
+    "C_MSG_6": [
+      "Item is updated successfully!",
+      "Item is updated successfully!"
+    ],
+    "C_MSG_7": [
+      "The end date must be after the start date.",
+      "The end date must be after the start date."
+    ],
+    
+    "C_MSG_9": [
+      "Are you sure you want to cancel?",
+      "Are you sure you want to cancel?"
+    ],
+    "C_MSG_10": [
+      "Please upload file image only! Sample: JPG,PNG,BMP,GIF.",
+      "Please upload file image only! Sample: JPG,PNG,BMP,GIF."
+    ],
+    
+    "C_MSG_12": [
+      "This is required.",
+      "This is required."
+    ],
+    "C_MSG_13": [
+      "Please input number only!",
+      "Please input number only!"
+    ],
+    "C_MSG_14": [
+      "Email address is incorrect.",
+      "Email address is incorrect."
+    ],
+    "C_MSG_15": [
+      "Please enter less than ${number} digits.",
+      "Please enter less than ${number} digits."
+    ],
+    "C_MSG_16": [
+      "Please select one or more items.",
+      "Please select one or more items."
+    ]
+  
+  
+  }
+}

@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Guideline", "1. Guideline", "{7427D2B0-C425-4577-8A28-FB19CA00B707}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Libraries", "2. Libraries", "{55B3C35C-2267-477A-81C7-8C4385AEB5E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Authentication", "3. Authentication", "{1C9C274B-243D-472A-A0C6-C1226FD660A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain", "4. Domain", "{7F826456-0B32-4477-85E6-BC3A43AC3921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Api", "5. Api", "{2F54B7C4-1A3D-48D3-A2DE-ADEFBADD1119}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Application", "6. Application", "{ACCC548A-7D35-4638-A0BF-0EDC89FE99B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7. Tests", "7. Tests", "{ACB42223-E3C0-4890-B397-EC288E452BF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiTests", "ApiTests\ApiTests.csproj", "{A31117FA-53EF-4C8C-8131-A93396908DC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{995163F0-BFE1-43C7-8A2E-4468B453DE0C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lowcode.Framework", "Lowcode.Framework\Lowcode.Framework.csproj", "{E56A8E94-9E17-42A4-A644-FAA50ED6B376}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lowcode.Authentication", "Lowcode.Authentication\Lowcode.Authentication.csproj", "{AFD2BD26-9345-4269-ABF2-67316C1ECCA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lowcode.Domain", "Lowcode.Domain\Lowcode.Domain.csproj", "{4B32C9E0-4685-45E6-B1BF-BA01637AFB07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lowcode.Api", "Lowcode.Api\Lowcode.Api.csproj", "{FC86EABA-1EBB-402B-BA37-69D196304653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A31117FA-53EF-4C8C-8131-A93396908DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31117FA-53EF-4C8C-8131-A93396908DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31117FA-53EF-4C8C-8131-A93396908DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31117FA-53EF-4C8C-8131-A93396908DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E56A8E94-9E17-42A4-A644-FAA50ED6B376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E56A8E94-9E17-42A4-A644-FAA50ED6B376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E56A8E94-9E17-42A4-A644-FAA50ED6B376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E56A8E94-9E17-42A4-A644-FAA50ED6B376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD2BD26-9345-4269-ABF2-67316C1ECCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD2BD26-9345-4269-ABF2-67316C1ECCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD2BD26-9345-4269-ABF2-67316C1ECCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD2BD26-9345-4269-ABF2-67316C1ECCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B32C9E0-4685-45E6-B1BF-BA01637AFB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B32C9E0-4685-45E6-B1BF-BA01637AFB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B32C9E0-4685-45E6-B1BF-BA01637AFB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B32C9E0-4685-45E6-B1BF-BA01637AFB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC86EABA-1EBB-402B-BA37-69D196304653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC86EABA-1EBB-402B-BA37-69D196304653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC86EABA-1EBB-402B-BA37-69D196304653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC86EABA-1EBB-402B-BA37-69D196304653}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A31117FA-53EF-4C8C-8131-A93396908DC5} = {ACB42223-E3C0-4890-B397-EC288E452BF7}
+		{E56A8E94-9E17-42A4-A644-FAA50ED6B376} = {55B3C35C-2267-477A-81C7-8C4385AEB5E4}
+		{AFD2BD26-9345-4269-ABF2-67316C1ECCA7} = {1C9C274B-243D-472A-A0C6-C1226FD660A2}
+		{4B32C9E0-4685-45E6-B1BF-BA01637AFB07} = {7F826456-0B32-4477-85E6-BC3A43AC3921}
+		{FC86EABA-1EBB-402B-BA37-69D196304653} = {2F54B7C4-1A3D-48D3-A2DE-ADEFBADD1119}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1FBB1A7-66F7-4FF6-B597-95ABEE574B89}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+/ApiTests/obj
+/ApiTests/bin
+/Lowcode.Api/obj
+/Lowcode.Api/bin
+/Lowcode.Authentication/bin
+/Lowcode.Authentication/obj
+/Lowcode.Domain/bin
+/Lowcode.Domain/obj
+/Lowcode.Framework/bin
+/Lowcode.Framework/obj
